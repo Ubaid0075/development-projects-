@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UB's Weather App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <h1>🌤 UB's Weather App</h1>
+
+    <div class="search">
+      <input id="cityInput" type="text" placeholder="Enter city name (e.g. Mumbai)" />
+      <button id="checkBtn">Check</button>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <div id="result" class="result hidden">
+      <div class="top">
+        <img id="weatherIcon" alt="icon" class="icon" />
+        <div>
+          <h2 id="cityName"></h2>
+          <p id="condition"></p>
+        </div>
+      </div>
+
+      <div class="details">
+        <div>🌡 <span id="temp"></span> °C</div>
+        <div>💧 <span id="humidity"></span> %</div>
+        <div>🌬 <span id="wind"></span> m/s</div>
+      </div>
+    </div>
+
+    <footer>
+      <small>Data from OpenWeatherMap</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

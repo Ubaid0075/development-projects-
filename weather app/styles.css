@@ -1,0 +1,82 @@
+:root {
+  --bg1: #74ABE2;
+  --bg2: #5563DE;
+  --card: rgba(255,255,255,0.08);
+  --glass: rgba(255,255,255,0.08);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: white;
+  padding: 20px;
+}
+
+.app {
+  width: 380px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+  backdrop-filter: blur(6px);
+}
+
+h1 { margin: 0 0 16px 0; font-size: 20px; text-align: center; }
+
+.search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.search input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+.search button {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: white;
+  color: #333;
+  font-weight: 600;
+}
+
+.message {
+  min-height: 22px;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.result.hidden { display: none; }
+
+.result .top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.icon {
+  width: 64px;
+  height: 64px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+footer { text-align: center; margin-top: 14px; opacity: 0.8; font-size: 12px; }
